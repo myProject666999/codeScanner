@@ -1,0 +1,38 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  driver: sqlite
+  path: codescanner.db
+
+github:
+  proxy: ""
+  rate_limit: 5000
+
+notifications:
+  email:
+    enabled: false
+    smtp_host: ""
+    smtp_port: 587
+    sender: ""
+    password: ""
+    recipients: []
+  dingtalk:
+    enabled: false
+    webhook: ""
+    secret: ""
+  feishu:
+    enabled: false
+    webhook: ""
+  webhook:
+    enabled: false
+    url: ""
+    method: POST
+  telegram:
+    enabled: false
+    bot_token: ""
+    chat_ids: []
+  wechat:
+    enabled: false
+    webhook: ""
